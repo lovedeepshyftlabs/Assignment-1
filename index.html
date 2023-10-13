@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <header>
+        <nav class="navigation-bar">
+            <div class="company-logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="A company Logo">
+                </a>
+            </div>
+            <div class="search-items">
+                <input type="text" placeholder="Seach your items here.." >
+                <button class="search-icon">
+                    <i class="fa fa-fw fa-search"></i>
+                </button>
+            </div>
+            <div class="nav-btn">
+                <div class="nav-btn-list">
+                    <ul>
+                        <li><i class="fa fa-fw fa-user"></i>Sign in</li>
+                        <li><i class="fa fa-heart"></i> Wishlist</li>
+                        <li><i class="fa fa-shopping-cart"></i> My cart</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <body>
+        <div class="breadcrumbs">
+            <div class="breadcrumbs-content">
+                <h2 class="breadcrumbs-item1">Men's wear</h2>
+                <ul class="breadcrumbs-item2">
+                    <li class="bc-home"><a href="#">Home</a></li>
+                    <li class="bc-library"><a href="#">Library</a></li>
+                    <li class="bc-data"><a href="#">Data</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="left-portion">
+                <div class="dropdown">
+                    <div class="dropdown-btn dropdown-btn-radius">
+                        <h4>Related Items</h4>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                    <div class="dropdown-content-1">
+                        <ul>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Home Items</a></li>
+                            <li><a href="#">Books, Magazines</a></li>
+                            <li><a href="#">Men's clothing</a></li>
+                            <li><a href="#">Interiors items</a></li>
+                            <li><a href="#">Underwears</a></li>
+                            <li><a href="#">Shoes for men</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <h4>Brands</h4>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                    <div class="dropdown-content-2">
+                        <ul>
+                            <li>
+                                <input id="mercedes" type="checkbox">
+                                <label for="mercedes">Mercedes</label>
+                                <strong class="cnt">
+                                    <h5>120</h5>
+                                </strong>
+                            </li>
+                            <li>
+                                <input id="toyoto" type="checkbox">
+                                <label for="toyoto">Toyoto</label>
+                                <strong class="cnt">
+                                    <h5>10</h5>
+                                </strong>
+                            </li>
+                            <li>
+                                <input id="mitsubishi" type="checkbox">
+                                <label for="mitsubishi">Mitsubishi</label>
+                                <strong class="cnt">
+                                    <h5>100</h5>
+                                </strong>
+                            </li>
+                            <li>
+                                <input id="nissan" type="checkbox">
+                                <label for="nissan">Nissan</label>
+                                <strong class="cnt">
+                                    <h5>190</h5>
+                                </strong>
+                            </li>
+                            <li>
+                                <input id="honda" type="checkbox">
+                                <label for="honda">Honda</label>
+                                <strong class="cnt">
+                                    <h5>12</h5>
+                                </strong>
+                            </li>
+                            <li>
+                                <input id="suzuki" type="checkbox">
+                                <label for="suzuki">Suzuki</label>
+                                <strong class="cnt">
+                                    <h5>50</h5>
+                                </strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <h4>Price</h4>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                    <div class="dropdown-content-3">
+                        <div class="custom-range">
+                            <label for="customRange1" class="form-label"></label>
+                            <input type="range" class="form-range" id="customRange1">
+                        </div>
+                        <div class="input-range">
+                            <div class="min-max-range">
+                                <label for="min">Min</label>
+                                <label for="max">Max</label>
+                            </div>
+                            <div class="amount">
+                                <input id="min" type="number" placeholder="$0">
+                                <input id="max" type="number" placeholder="$1,0000">
+                            </div>
+                        </div>
+                        <div></div>
+                        <div class="apply-btn">
+                            <button>APPLY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <h4>Size</h4>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                    <div class="dropdown-content-4">
+                        <ul>
+                            <li><a href="#">XS</a></li>
+                            <li><a href="#">SM</a></li>
+                            <li><a href="#">LG</a></li>
+                            <li><a href="#">XXL</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <h4>Ratings</h4>
+                        <i class="fa fa-angle-up"></i>
+                    </div>
+                    <div class="dropdown-content-5">
+                        <ul>
+                            <li>
+                                <input id="5-star" type="checkbox">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </li>
+                            <li>
+                                <input id="4-star" type="checkbox">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span> 
+                            </li>
+                            <li>
+                                <input id="3-star" type="checkbox">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </li>
+                            <li>
+                                <input id="2-star" type="checkbox">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </li>
+                            <li>
+                                <input id="1-star" type="checkbox">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="right-portion">
+                <div class="right-upper-portion">
+                    <h4>32 Items found</h4>
+                    <div class="nav-link services">
+                        <button class="services-btn">
+                            <a href="#">Best Match
+                                <span class="material-icons dropdown-icon"> arrow_drop_down </span>
+                            </a>
+                            <ul class="drop-down">
+                                <li>Match 1</li>
+                                <li>Match 2</li>
+                                <li>Match 3</li>
+                            </ul>
+                        </button>
+                    </div>
+                    <div class="bars-calc-btn">
+                        <button id="bars"><i class="fa fa fa-bars"></i></button>
+                        <button id="calculator"><i class="fa fa-calculator"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card" id="card-1">
+                        <a href="#">
+                            <img src="images/tshirt-1.png" alt="T-Shirt">
+                        </a>
+                        <h2>$30,00 <h3 class="price">$49,99.9</h3>
+                        </h2>
+                        <p>T-shirts with multiple colors, for men and lady</p>
+                        <button id="heart">Add To Cart</button>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card" id="card-2">
+                        <a href="#">
+                            <img src="images/tshirt-2.png" alt="T-Shirt">
+                        </a>
+                        <h2>$3000 <h3 class="price">$49.99</h3>
+                        </h2>
+                        <p>T-shirts with multiple colors, for men and lady</p>
+                        <button id="heart">Add To Cart</button>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card" id="card-3">
+                        <a href="#">
+                            <img src="images/tshirt-1.png" alt="T-Shirt">
+                        </a>
+                        <h2>$3000 <h3 class="price">$49.99</h3>
+                        </h2>
+                        <p>T-shirts with multiple colors, for men and lady</p>
+                        <button id="heart">Add To Cart</button>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card" id="card-4">
+                        <a href="#">
+                            <img src="images/tshirt-1.png" alt="T-Shirt">
+                        </a>
+                        <h2>$3000 <h3 class="price">$49.99</h3>
+                        </h2>
+                        <p>T-shirts with multiple colors, for men and lady</p>
+                        <button id="heart">Add To Cart</button>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card" id="card-5">
+                        <a href="#">
+                            <img src="images/tshirt-2.png" alt="T-Shirt">
+                        </a>
+                        <h2>$3000 <h3 class="price">$49.99</h3>
+                        </h2>
+                        <p>T-shirts with multiple colors, for men and lady</p>
+                        <button id="heart">Add To Cart</button>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card" id="card-6">
+                        <a href="#">
+                            <img src="images/tshirt-1.png" alt="T-Shirt">
+                        </a>
+                        <h2>$3000 <h3 class="price">$49.99</h3>
+                        </h2>
+                        <p>T-shirts with multiple colors, for men and lady</p>
+                        <button id="heart">Add To Cart</button>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card" id="card-7">
+                        <a href="#">
+                            <img src="images/tshirt-1.png" alt="T-Shirt">
+                        </a>
+                        <h2>$3000 <h3 class="price">$49.99</h3>
+                        </h2>
+                        <p>T-shirts with multiple colors, for men and lady</p>
+                        <button id="heart">Add To Cart</button>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card" id="card-8">
+                        <a href="#">
+                            <img src="images/tshirt-2.png" alt="T-Shirt">
+                        </a>
+                        <h2>$3000 <h3 class="price">$49.99</h3>
+                        </h2>
+                        <p>T-shirts with multiple colors, for men and lady</p>
+                        <button id="heart">Add To Cart</button>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="card" id="card-9">
+                        <a href="#">
+                            <img src="images/tshirt-1.png" alt="T-Shirt">
+                        </a>
+                        <h2>$3000 <h3 class="price">$49.99</h3>
+                        </h2>
+                        <p>T-shirts with multiple colors, for men and lady</p>
+                        <button id="heart">Add To Cart</button>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slides-btn">
+            <a href="#" class="previous">&#8249;&#8249;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#" class="next">&#8250;&#8250;</a>
+        </div>
+    </body>
+    <footer>
+        <div class="foot">
+            <div class="foot-content">
+                <div class="copyright">
+                    <h1>MDB</h1>
+                    <h5 class="content">@ 2023 Copyright: MDBootstrap.com</h5>
+                </div>
+                <div class="store">
+                    <h5>STORE</h5>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h5>INFORMATION</h5>
+                    <ul>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Money refund</a></li>
+                        <li><a href="#">Shipping info</a></li>
+                        <li><a href="#">Refunds</a></li>
+                    </ul>
+                </div>
+                <div class="support">
+                    <h5>SUPPORT</h5>
+                    <ul>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Documents</a></li>
+                        <li><a href="#">Account restore</a></li>
+                        <li><a href="#">Account restore</a></li>
+                    </ul>
+
+                </div>
+                <div class="newsletter">
+                    <h5>NEWSLETTER</h5>
+                    <label for="email">
+                        <h5 class="content">Stay in touch with latest updates about our products and offers</h5>
+                    </label>
+                    <div class="content join-newsletter">
+                        <input id="email" type="text" placeholder="Email">
+                        <button class="join-btn">
+                            Join
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="last-content">
+                <div class="partnership">
+                    <img src="images/companies.png" alt="">
+                </div>
+                <div class="english">English &nbsp;<i class="fa fa-angle-up"></i> </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

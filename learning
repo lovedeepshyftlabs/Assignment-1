@@ -1,0 +1,76 @@
+1) for attribute in label is used along with id in input -> so that when I click on label, my cursor must go to the input field
+2) name attibute specifies the name to be sent to a server when a form is submitted 
+3) value attribute specifies the value to be sent to a server when a form is submitted, in input tag - it specifies the initial value in the text field
+4) type specifies the type of the value
+5) placeholder specifies the invisible part behind the input text field
+
+6) anchor tag is for link 
+7) img srcset sizes
+8) The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+   The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
+
+
+1) inline, internal, external css
+2) selector - id, class, element, universal, grouping, nested
+// #class1, #class2 {properites:value} -> grouping selector
+// #first>p {} -> nested selection(elements of elements) -> first class ke andhr paragraph ko properites assign krdo
+3) font-size, font-weight, font-style, font-family, border, border-radius, text-align, color, text-decoration
+// do not use px in font-size (font-size remain same for visually impaired people, absolute), instead use em. but there is a problem with em is that it 
+// is relative to parent. It's value will get increased on the bass of parent. To handle those cases, you can make use of rem (root em)
+px is absolute
+
+4) box-sizing: border-box; [width and height content ke hisab se hogi, agr hum chahte hai ki border include krke border ke hisab se ho tou hum box-sizing: border-box use krenge]
+5) css units -
+    % -> relative to parent
+    vw -> absolute unit to window screen
+    em -> we must always use em in font-size and not px. em is relative to parent. By default, it's value is 1em
+
+6) block elements - para, heading, division, forms, list
+   inline elements - span, anchor 
+   inline-block - images
+
+7) navigation - list-style: none;   
+8) position: static, relative, absolute, fixed (absolute and fixed works relative to the root)
+9) overflow: visible, hidden, scroll, auto
+10) float: left, right, none, inherit
+// src="https://via.placeholder.com/200"
+11) clear:left, right, both (content & img)
+
+12) to get the inner box in the center of the outer box -
+inside inner-box, we use {
+    position: relative; top:50%; transform: translate(-50%);
+}
+
+13) We use margin to generate a gap between elements and parent, but if just want to maintain gap between elements and not with parent, we use gap:10px, row-gap:10px, column-gap;
+
+13) background-color or background: linear-gradient(to right, color1, color2);
+14)
+FLEX CONTAINER ----
+flex-box => display: flex;
+//  flex-direction, flex-wrap, flex-flow, justify-content, align-items, align-content
+i)  flex-direction by default main axis(x, justify-content) ke according hoti hai, if want for cross axis(y, align-items) we use flex-direction:column
+    flex-direction: row(defult), column, row-reverse, column-reverse;
+ii) flex-wrap: to avoid shrinking of box (flex-wrap:wrap; reverse-wrap)  
+iii)flex-flow: flex-direction flex-wrap;
+iv) justify-content (main (x) axis ke around): space-around (to cover space), space-between (inner elements only), flex-start, flex-end, flex-center
+v) align-items(cross (y) axis ke around): stretch(by default), flex-start, flex-end;
+// div ko center mei lana ho dusre div mei display:flex, justify-content:center; align-items:center;
+vi) align-content: (rows ke beech mei gap maintain kr skte)
+
+FLEX CHILD ITEMS ---
+order, flex-grow, flex-shrink, flex-basis, align-self
+i) order - konsa box pehle ayega 
+ii, iii) konsa elements/box pehle shrink ya grow hona chaiye
+iv) initial width for a particular element in the direction of main axis
+v) flex: grow, shrink, basis
+
+15) grid layout - 
+CONTANINER-
+display: grid;
+// gap, row-gap, column-gap, grid-template-columns(fraction fr, or any other units)
+gap, grid-template-columns, grid-template-rows,justify-content, align-content, align-items
+GRID CHILD ITEMS - 
+justify-self, align-self, grid-column-start, gird-column-end, grid-column, grid-row, grid-area(imp), grid-template-areas
+
+16) Animation - 
+Transition, background-blend-mode
