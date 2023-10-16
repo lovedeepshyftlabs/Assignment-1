@@ -14,7 +14,7 @@
 2) selector - id, class, element, universal, grouping, nested
 // #class1, #class2 {properites:value} -> grouping selector
 // #first>p {} -> nested selection(elements of elements) -> first class ke andhr paragraph ko properites assign krdo
-3) font-size, font-weight, font-style, font-family, border, border-radius, text-align, color, text-decoration
+3) font-size, font-weight, font-style, font-family, border, border-radius(border-radius: 50% = circle), text-align, color, text-decoration
 // do not use px in font-size (font-size remain same for visually impaired people, absolute), instead use em. but there is a problem with em is that it 
 // is relative to parent. It's value will get increased on the bass of parent. To handle those cases, you can make use of rem (root em)
 px is absolute
@@ -28,6 +28,7 @@ px is absolute
 6) block elements - para, heading, division, forms, list
    inline elements - span, anchor 
    inline-block - images
+   // dono block ko inline krna pdega to make them inline.. 
 
 7) navigation - list-style: none;   
 8) position: static, relative, absolute, fixed (absolute and fixed works relative to the root)
@@ -72,5 +73,65 @@ gap, grid-template-columns, grid-template-rows,justify-content, align-content, a
 GRID CHILD ITEMS - 
 justify-self, align-self, grid-column-start, gird-column-end, grid-column, grid-row, grid-area(imp), grid-template-areas
 
-16) Animation - 
-Transition, background-blend-mode
+16) media-queries - 
+@media (min-width: 400px) and (max-width: 600px) {} or (width <= 400px) {} or (orientation: portrait) {}
+
+17) dark-mode 
+/*
+:root { // global variables
+    --primary-color: #ddd;
+}
+.dark { // overriding the root html variables when using this class (.dark) in any container
+    --primary-color: #555;
+}
+*/
+
+18) pseudo-class: used to define a special state of an element
+   eg-> :visited, :link, :hover, :active, :first-child, :last-child, nth-child(for eg- from list, it uses formula = {an + b});
+19) pseudo elements - used to style specified parts of an element.
+    eg-> ::first-letter, ::first-line, ::selection, ::before, ::after
+    name::after {
+        content: '*' or 'This is the required field' (this content can't be selected as it is not a part of html)
+    }
+
+20) transform: scale(X, Y), ScaleX, ScaleY, skew(20deg, Y-direction-mei-deg), translate, rotate, transform-origin
+    center point ke hisab se movement krna - 
+    // translate(X-direction mei center ke hisab se kitna left-right move krna, (Y-direction) 50%);
+    // rotate(20deg, 40deg); // z direction mei bhi kr skte
+
+21) transition: 1s (container/box ke andhr likhna hota jispe ye effect add krna chahte);
+    // transition-delay, transition-duration, transition-property, transition-timing-function
+    // transition-timing-function: ease(slow-fast-slow movement), ease-in(slow start), ease-out(slow-end), ease-in-out(slown start and end),
+    // linear(same speed from start to end), cubic-bezier(define own value from inspect curve function)
+    // kisi action hone (eg hover krne) pr yeh effect hoga -
+
+22) Animation (Using keyframes) -
+.container {
+    animation-name: name (written in keyframes below)
+    animation-duration: in s
+    animation-delay:in s
+    animation-iteration-count:(can be infinite)
+    animation-direction: normal,reverse, alternate, alternate-reverse;
+    animation-timing-function: same as transition-timing-function
+    animation-fill-mode: (specifies a style for the target element when the animation is not playing)
+    // none, forwards, backwards, both
+
+}
+@keyframes name {
+    0%, 100% {
+        properties;
+    }
+    25% {
+        properties:values;
+    }
+    50% {
+        properties:values;
+    }
+    75% {
+        properties:values;
+    }
+}
+
+// addEventListener(event, function, useCaptue);
+by default, it's bubbling(false), i.e. the innermost element's event is handled first and then the outer
+while in capturing, it's bubbling(false), the outermost element's event is handled first and then the inner

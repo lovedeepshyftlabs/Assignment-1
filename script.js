@@ -1,13 +1,16 @@
 var dropdown = document.getElementsByClassName("dropdown-btn");
-var content = document.querySelector(".dropdown-content-1");
 for (var i = 0; i < dropdown.length; i++) {
     dropdown[i].addEventListener("click", function () {
+        var dropdownIcon = this.querySelector(".icon");
         var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "none") {
-            dropdownContent.style.display = "grid";
 
-        } else {
-            dropdownContent.style.display = "none";
+        if (dropdownIcon.classList.contains("transformation")) {
+            dropdownIcon.classList.remove("transformation");
+            dropdownContent.style.maxHeight = null;
+        }
+        else {
+            dropdownIcon.classList.add("transformation");
+            dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
         }
     });
 }
